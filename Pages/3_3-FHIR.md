@@ -14,7 +14,6 @@ This implementation guide uses terminology, notations and design principles that
 * [FHIR data types](http://build.fhir.org/datatypes.html)
 * [Using codes](http://build.fhir.org/terminologies.html)
 * [References between resources](http://build.fhir.org/references.html)
-
 * [How to read resource and profile definitions](http://build.fhir.org/formats.html)
 * [Base resource](http://build.fhir.org/resource.html)
 

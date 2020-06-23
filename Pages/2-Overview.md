@@ -50,17 +50,14 @@ An overview of the flow of the CDS-Hooks and SMART-on-FHIR exchange is shown bel
 
 The sharing of data with a member-controlled Third Party App is accomplished through the Member's HIPAA Right of Access. As such the member is able to use their data in any way they desire. Consequently the Third Party App may not be a HIPAA Covered Entity or Business Associate of a covered entity and may not be covered by HIPAA controls in the use of data, sensitive or otherwise. If it is an authorization to exchange data between two covered entities (e.g. Payer to Payer) the controls for protecting sensitive information flow with the data.
 
-The well defined mechanism for enabling Member/Patient authorization to share information with an application using the FHIR API is to use OAuth2.0 as the Authorization protocol. The member **SHALL** authenticate using credentials they have been issued with by the Health Plan. This is typically the member's customer portal credentials.
+The well defined mechanism for enabling Member/Patient authorization to share information with a SMART-on-FHIR application framework process. The member **SHALL** authenticate using credentials that have been issued by, or are recognized and accepted by the Health Plan. These are typically the member's customer portal credentials for accessing the health plan.
 
 After authenticating the Member **SHALL** be presented with an Authorization screen that enables them to approve the sharing of information with the Third Party, or new Health Plan, Application that has client application credentials registered with the Health Plan.
 
-An overview of the OAuth2.0 Flows using the FHIR API are shown below:
-
-<table><tr><td><img width="100%" height="auto" src="MemberAuthExchange.png" /></td></tr></table>	
 
 #### $patient-everything exchange via Alternate Secure Transport
 
-The Patient-everything operation enables the use of Bulk FHIR, using such formats as ND-Json. This IG does not define the alternate secure transport mechanisms that may be used for exchange between Health Plans. However, the IG does allow for the use of Bulk FHIR formats to exchange data for an individual member where the member has authorized that exchange or Federal, state or local regulations authorize the sharing of information between parties. 
+The $patient-everything operation for an individual member enables the potential use of Bulk FHIR, using such formats as ND-Json. This IG does not define the alternate secure transport mechanisms that may be used for exchange between Health Plans. However, the IG does allow for the use of Bulk FHIR formats to exchange data for an individual member where the member has authorized that exchange or Federal, state or local regulations authorize the sharing of information between parties. 
 
 The use of the Bulk FHIR specification for transmission of member data **SHALL** honor jurisdictional and personal privacy restrictions that are relevant to a member's health record.
 
@@ -68,7 +65,7 @@ Data Segmentation capabilities for Bulk Data Transfer are currently being develo
 
 ### Provenance
 
-Since Health Plans compile information from many sources to create a Member's Health History it is important that data traceability is maintained. The HL7 FHIR Provenance resource is used for this purpose. It is used to identify the source of information, the agents the data passed through and the actions they performed on the data.
+Since Health Plans compile information from many sources to create a Member's Health History it is important that data traceability is maintained. This guide defines a Provenance resource that is used for this purpose. This resource supplements US Core Provenance profile which is typically not suited to payer's common use cases. The PDex Provenance profile is used to identify the source of information, the agents the data passed through and the actions they performed on the data.
 
 Health Plans **SHALL** incorporate provenance records that they receive as part of any exchange of FHIR data. Where a FHIR Provenance resource is not provided, such as when data is received from other non-FHIR sources, the Health Plan **SHALL** create FHIR Provenance record(s) to identify the source of the information being received and the actions applied to the data, such as converting from one format to another. Health Plans **SHALL** provide Provenance records in any PDex information exchange.
 

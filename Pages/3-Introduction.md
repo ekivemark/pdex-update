@@ -18,7 +18,7 @@ The PDex IG identifies three actors and specifies three interactions that occur.
 	
 The Blue Button 2.0 initiative (The CMS Blue Button 2.0 API and the CARIN Consumer-Directed Exchange IG) specifies the profiles used to communicate claims information between health plans and their members. The PDex Implementation Guide (IG) is focused on presenting a member's health and claims information as FHIR clinical profiles (based on US Core) that are more easily consumed by Electronic Medical Records (EMR) systems. 
                                                                                                                                                    
-Ad-hoc PDex Member History Requests  via CDS Hooks provides a mechanism for providers/clinicians to request Health Plan's  information regarding the medical history for their patient as part of their regular workflow.  Requestor should be aware that the Health Plan may not have a complete medical history of services provided due to delays in billing, patient ability to pay for services, etc.
+Ad-hoc PDex Member History Requests via CDS Hooks provides a mechanism for providers/clinicians to request Health Plan's information regarding the medical history for their patient as part of their regular workflow.  Requestor should be aware that the Health Plan may not have a complete medical history of services provided due to delays in billing, patient ability to pay for services, etc.
 
 The same FHIR profiles used to support communication between the health plan and providers will also be used to provide the payload of member health information that will be exchanged between health plans when authorized by a health plan member.
 

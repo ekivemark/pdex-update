@@ -9,15 +9,16 @@ This implementation guide is dependent on other specifications. Please submit an
 
 - Feedback on CDS Hooks should be posted to the CDS Hooks [GitHub Issue List](https://github.com/cds-hooks/docs/issues)
 
-- Feedback on the FHIR core specification should be submitted to the [FHIR gForge tracker](http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&tracker_id=677) with "FHIR Core" as the specification.
+- Feedback on this Implementation Guide and supporting HL7 specifications should be submitted as issue tickets via the [HL7 FHIR Jira system](https://jira.hl7.org/secure/Dashboard.jspa). Login to Jira and create an issue. Enter the following information to identify the relevant specification:
 
-- Feedback on the US core profiles should be submitted to the [FHIR gForge tracker](http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&tracker_id=677) with "US Core" as the specification.
+Project: FHIR Specification Feedback
+Issue Type: Change Request
+Specification:
 
-- Individuals interested in participating in Payer Data exchange (PDex) or other HL7 Da Vinci projects can find information about Da Vinci [here](http://www.hl7.org/about/davinci).
+- FHIR Core (FHIR)
+- US Core (FHIR)
+- US Da Vinci PDex (FHIR)
 
-
-There are a few places in this implementation guide marked as **TODO**. All such areas represent supplementary content such as examples, additional background, context or other non-definitional content. I.e. they do not change any of the conformance expectations on implementers. 
-
-Where **TODO** appears, such content will be created and included in the implementation guide prior to publication as a Standard for Trial Use.
+- Individuals interested in participating in Payer Data exchange (PDex) or other HL7 Da Vinci projects can find information about the Da Vinci accelerator project [here](http://www.hl7.org/about/davinci).
 
 
